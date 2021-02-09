@@ -33,7 +33,7 @@ namespace Business.Concrete
 
         public Car GetById(int id)
         {
-            return _carDal.GetById(id);
+            return _carDal.Get(c=>c.Id==id);
         }
 
         public void Update(Car car)
